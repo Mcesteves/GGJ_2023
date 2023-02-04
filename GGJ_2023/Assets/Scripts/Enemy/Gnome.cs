@@ -2,10 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyDamage : MonoBehaviour
+public class Gnome : MonoBehaviour
 {
-    [SerializeField]
+    public GnomeObject gnomeObject;
     private float life;
+    void Start()
+    {
+        life = gnomeObject.endurance;
+        GetComponent<SpriteRenderer>().sprite = gnomeObject.normalSprite;
+    }
+
     public void TakeDamage(float lifeDecrease)
     {
         if (life > lifeDecrease)
