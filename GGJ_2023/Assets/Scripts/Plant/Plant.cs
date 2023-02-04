@@ -21,7 +21,6 @@ public class Plant : MonoBehaviour
         bombTargets = new List<GameObject>();
             
     }
-
     void Update()
     {
         if (!onRest && enemies.Count!=0)
@@ -44,7 +43,6 @@ public class Plant : MonoBehaviour
                 currentTarget = enemies[0];
         }
     }
-
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Gnome"))
