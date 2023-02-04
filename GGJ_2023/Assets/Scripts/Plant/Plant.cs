@@ -8,8 +8,6 @@ public class Plant : MonoBehaviour
     private PlantObject plantObject;
     [SerializeField]
     private GameObject bulletPrefab;
-    [SerializeField]
-    private GameObject enemy;
     private bool onRest;
     private GameObject currentTarget;
     private List<GameObject> enemies;
@@ -25,8 +23,10 @@ public class Plant : MonoBehaviour
     {
         if (!onRest && enemies.Count!=0)
         {
-            if(plantObject.plantType == PlantType.ShootingDamage)
+            if (plantObject.plantType == PlantType.ShootingDamage)
                 StartCoroutine(Shoot());
+            else if (plantObject.plantType == PlantType.AuraDamage)
+                StartCoroutine(AuraAttack());
         }
     }
 
@@ -81,9 +81,26 @@ public class Plant : MonoBehaviour
 
     }
 
-    private void AuraAttack()
+    private IEnumerator AuraAttack()
     {
+        foreach( GameObject enemy in enemies)
+        {
+            enemy.GetComponent<EnemyDamage>().TakeDamage(plantObject.damage);
+            var bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+            var direction = (enemy.transform.position - transform.position).normalized;
+            bullet.GetComponent<Rigidbody2D>().velocity = direction * plantObject.bulletSpeed;
+            StartCoroutine(DestroyBullet(bullet, direction));
+        }
+        onRest = true;
+        yield return new WaitForSeconds(plantObject.rechargeTime);
+        onRest = false;
+    }
 
+    private IEnumerator DestroyBullet(GameObject bullet, Vector2 direction)
+    {
+        var time = (currentTarget.transform.position - transform.position).magnitude / (direction * plantObject.bulletSpeed).magnitude;
+        yield return new WaitForSeconds(time);
+        Destroy(bullet);
     }
 
     private void AreaAttack()
