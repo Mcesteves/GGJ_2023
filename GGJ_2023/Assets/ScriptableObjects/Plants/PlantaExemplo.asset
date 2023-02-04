@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PlantaExemplo
   m_EditorClassIdentifier: 
   plantType: 1
-  range: 10
+  range: 4
   damage: 5
   rechargeTime: 0.5
   cost: 2
