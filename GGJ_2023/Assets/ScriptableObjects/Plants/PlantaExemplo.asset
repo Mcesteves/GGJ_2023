@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1bd1627c42f620408251fa7cf9c2130, type: 3}
   m_Name: PlantaExemplo
   m_EditorClassIdentifier: 
-  plantType: 0
+  plantType: 2
   range: 4
-  damage: 5
+  damage: 10
   rechargeTime: 2
   cost: 2
   sprite: {fileID: 0}
   bulletSpeed: 20
+  bombRange: 1

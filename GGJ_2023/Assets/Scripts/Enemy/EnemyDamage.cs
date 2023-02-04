@@ -20,6 +20,9 @@ public class EnemyDamage : MonoBehaviour
 
     public void TakeDamage(float lifeDecrease)
     {
-        life -= lifeDecrease;
+        if (life > lifeDecrease)
+            life -= lifeDecrease;
+        else
+            Destroy(this.gameObject);
     }
 }

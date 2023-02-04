@@ -19,5 +19,5 @@ public class PlantObject : ScriptableObject
     public float cost;
     public Sprite sprite;
     public float bulletSpeed;
-
+    public float bombRange;
 }
