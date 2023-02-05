@@ -16,6 +16,7 @@ public class PlantManager : MonoBehaviour
     public float waterTotal;
     [HideInInspector]
     public float currentWaterTotal;
+    public GameObject closePlantMenuButton;
 
     private Vector3 plantPosition;
     private bool onPlantSelection;
@@ -72,6 +73,7 @@ public class PlantManager : MonoBehaviour
         foreach (var button in selectionPanel.GetComponentsInChildren<PlantButton>())
             button.SetButton();
         selectionPanel.SetActive(true);
+        closePlantMenuButton.SetActive(true);
     }
 
     public void PlantTree(GameObject plant)
@@ -81,6 +83,7 @@ public class PlantManager : MonoBehaviour
             Instantiate(plant, plantPosition, Quaternion.identity);
             selectionPanel.SetActive(false);
             onPlantSelection = false;
+            closePlantMenuButton.SetActive(false);
         }
         else
         {
@@ -94,6 +97,7 @@ public class PlantManager : MonoBehaviour
         Destroy(selectedPlant);
         selectionPanel.SetActive(false);
         onPlantSelection = false;
+        closePlantMenuButton.SetActive(false);
     }
 
     public bool UseWater(float qtd)
@@ -111,6 +115,13 @@ public class PlantManager : MonoBehaviour
     {
         currentWaterTotal += qtd;
         OnWaterUse?.Invoke();
+    }
+
+    public void ClosePlantMenu()
+    {
+        selectionPanel.SetActive(false);
+        onPlantSelection = false;
+        closePlantMenuButton.SetActive(false);
     }
 }
 
