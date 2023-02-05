@@ -839,6 +839,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -640.50446
       objectReference: {fileID: 0}
+    - target: {fileID: 7345795638683938190, guid: 7015cc0743264c6458b2d709591f2e9a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8198818908837842737, guid: 7015cc0743264c6458b2d709591f2e9a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1046,11 +1050,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1088325207258400805, guid: a6b885cac95ae014fb925691e3abc52b, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 122
+      value: 160.746
       objectReference: {fileID: 0}
     - target: {fileID: 1088325207258400805, guid: a6b885cac95ae014fb925691e3abc52b, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 99
+      value: 141.621
       objectReference: {fileID: 0}
     - target: {fileID: 1088325207258400805, guid: a6b885cac95ae014fb925691e3abc52b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1082,11 +1086,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1088325207258400805, guid: a6b885cac95ae014fb925691e3abc52b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1099.77
+      value: -841
       objectReference: {fileID: 0}
     - target: {fileID: 1088325207258400805, guid: a6b885cac95ae014fb925691e3abc52b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 412
+      value: 418
       objectReference: {fileID: 0}
     - target: {fileID: 1088325207258400805, guid: a6b885cac95ae014fb925691e3abc52b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1104,6 +1108,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MenuButton
       objectReference: {fileID: 0}
+    - target: {fileID: 4397255821911944186, guid: a6b885cac95ae014fb925691e3abc52b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f60a6607f885e894db3695309294a3fb, type: 3}
     - target: {fileID: 4397255821911944186, guid: a6b885cac95ae014fb925691e3abc52b, type: 3}
       propertyPath: m_Color.b
       value: 0.16862746
