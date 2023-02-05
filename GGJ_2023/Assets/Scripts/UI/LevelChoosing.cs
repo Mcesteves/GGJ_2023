@@ -25,7 +25,7 @@ public class LevelChoosing : MonoBehaviour
     }
     public void GotoMainMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        NextScene("MainMenu");
     }
     private IEnumerator ChangeScene()
     {
