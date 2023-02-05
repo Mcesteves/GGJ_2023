@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public List<GameObject> gnomePrefabs;
     public float hordesRestTime;
     public GameObject winnerCanvas;
-    [HideInInspector]
+    //[HideInInspector]
     public int totalGnomes;
     [HideInInspector]
     public int currentHorde;

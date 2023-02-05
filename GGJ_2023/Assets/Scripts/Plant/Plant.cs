@@ -5,8 +5,7 @@ using UnityEngine;
 public class Plant : MonoBehaviour
 {
     public List<GameObject> enemies;
-    [SerializeField]
-    private PlantObject plantObject;
+    public PlantObject plantObject;
     [SerializeField]
     private GameObject bulletPrefab;
     private bool onRest;
@@ -114,7 +113,8 @@ public class Plant : MonoBehaviour
         var time = (currentTarget.transform.position - transform.position).magnitude / (direction * plantObject.bulletSpeed).magnitude;
         yield return new WaitForSeconds(time);
         Destroy(bullet);
-        enemy.GetComponent<Gnome>().TakeDamage(plantObject.damage);
+        if (enemy != null)
+            enemy.GetComponent<Gnome>().TakeDamage(plantObject.damage);
     }
 
     private IEnumerator DestroyBomb(GameObject bullet, Vector2 direction)

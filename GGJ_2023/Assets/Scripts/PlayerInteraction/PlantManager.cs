@@ -13,10 +13,15 @@ public class PlantManager : MonoBehaviour
     [HideInInspector]
     public bool removePlant;
     public PauseMenu pauseMenu;
+    public float waterTotal;
+    //[HideInInspector]
+    public float currentWaterTotal;
 
     private Vector3 plantPosition;
     private bool onPlantSelection;
     private GameObject selectedPlant;
+
+    public event Action OnWaterUse;
     private void Awake()
     {
         if (instance == null)
@@ -29,6 +34,11 @@ public class PlantManager : MonoBehaviour
             return;
         }
         //DontDestroyOnLoad(gameObject);
+    }
+
+    private void Start()
+    {
+        currentWaterTotal = waterTotal;
     }
 
     void Update()
@@ -66,17 +76,41 @@ public class PlantManager : MonoBehaviour
 
     public void PlantTree(GameObject plant)
     {
-        Instantiate(plant, plantPosition, Quaternion.identity);
-        selectionPanel.SetActive(false);
-        onPlantSelection = false;
+        if (UseWater(plant.GetComponent<Plant>().plantObject.cost))
+        {
+            Instantiate(plant, plantPosition, Quaternion.identity);
+            selectionPanel.SetActive(false);
+            onPlantSelection = false;
+        }
+        else
+        {
+            //sinalizar q não tem agua
+        }
     }
 
     public void RemovePlant()
     {
+        ReturnWater(selectedPlant.GetComponent<Plant>().plantObject.cost);
         Destroy(selectedPlant);
         selectionPanel.SetActive(false);
         onPlantSelection = false;
     }
 
+    public bool UseWater(float qtd)
+    {
+        if(currentWaterTotal >= qtd)
+        {
+            currentWaterTotal -= qtd;
+            OnWaterUse?.Invoke();
+            return true;
+        }
+        return false;
+    }
+
+    public void ReturnWater(float qtd)
+    {
+        currentWaterTotal += qtd;
+        OnWaterUse?.Invoke();
+    }
 }
 
