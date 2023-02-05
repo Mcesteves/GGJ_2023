@@ -12,6 +12,10 @@ PrefabInstance:
       value: Pea Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4360482071448345864, guid: 7f3e046528c82ad4db488aa510f3a887, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4360482071448345864, guid: 7f3e046528c82ad4db488aa510f3a887, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1904141278, guid: 83d34362e1da1f94db7eaabec20a7740, type: 3}
