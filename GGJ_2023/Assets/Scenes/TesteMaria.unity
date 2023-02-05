@@ -130,6 +130,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 537039379}
     m_Modifications:
+    - target: {fileID: 5222714566225151785, guid: beb610be555c89043a735f525f10ebbe, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222714566225151785, guid: beb610be555c89043a735f525f10ebbe, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 340869097, guid: 8cecc56a906689e458d84a5058a22dd1, type: 3}
+    - target: {fileID: 5222714566225151785, guid: beb610be555c89043a735f525f10ebbe, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5222714566225151786, guid: beb610be555c89043a735f525f10ebbe, type: 3}
       propertyPath: m_Interactable
       value: 1
@@ -384,6 +396,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 537039379}
     m_Modifications:
+    - target: {fileID: 5222714566225151785, guid: beb610be555c89043a735f525f10ebbe, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222714566225151785, guid: beb610be555c89043a735f525f10ebbe, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1817898854, guid: 8cecc56a906689e458d84a5058a22dd1, type: 3}
+    - target: {fileID: 5222714566225151785, guid: beb610be555c89043a735f525f10ebbe, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5222714566225151787, guid: beb610be555c89043a735f525f10ebbe, type: 3}
       propertyPath: plantPrefab
       value: 
@@ -504,7 +528,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &537039377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -518,7 +542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2952,6 +2976,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 537039379}
     m_Modifications:
+    - target: {fileID: 5222714566225151785, guid: beb610be555c89043a735f525f10ebbe, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222714566225151785, guid: beb610be555c89043a735f525f10ebbe, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1051146285, guid: 8cecc56a906689e458d84a5058a22dd1, type: 3}
+    - target: {fileID: 5222714566225151785, guid: beb610be555c89043a735f525f10ebbe, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5222714566225151787, guid: beb610be555c89043a735f525f10ebbe, type: 3}
       propertyPath: plantPrefab
       value: 
@@ -3877,6 +3913,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 537039379}
     m_Modifications:
+    - target: {fileID: 5222714566225151785, guid: beb610be555c89043a735f525f10ebbe, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222714566225151785, guid: beb610be555c89043a735f525f10ebbe, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -698553626, guid: 8cecc56a906689e458d84a5058a22dd1, type: 3}
+    - target: {fileID: 5222714566225151785, guid: beb610be555c89043a735f525f10ebbe, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5222714566225151787, guid: beb610be555c89043a735f525f10ebbe, type: 3}
       propertyPath: plantPrefab
       value: 
