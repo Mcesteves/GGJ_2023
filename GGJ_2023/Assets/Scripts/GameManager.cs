@@ -43,7 +43,6 @@ public class GameManager : MonoBehaviour
             if(currentHorde< hordes.Count - 1)
                 StartCoroutine(HordeRest());
         }
-        
     }
 
     public bool CheckDirection(Vector3 position)

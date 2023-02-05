@@ -19,7 +19,6 @@ public class GnomeWalking : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Debug.Log(gameManager.path.Count);
         if(stepCount != gameManager.path.Count && canMove)
         {
             Move();

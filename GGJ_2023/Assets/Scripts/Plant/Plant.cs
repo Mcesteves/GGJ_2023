@@ -86,8 +86,6 @@ public class Plant : MonoBehaviour
             Destroy(bullet);
             currentTarget.GetComponent<Gnome>().TakeDamage(plantObject.damage);
         }
-        
-
     }
 
     private IEnumerator AuraAttack()
