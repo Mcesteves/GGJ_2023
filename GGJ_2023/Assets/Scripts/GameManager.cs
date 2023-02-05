@@ -11,11 +11,16 @@ public class GameManager : MonoBehaviour
     public List<HordeObject> hordes;
     public List<GameObject> gnomePrefabs;
     public float hordesRestTime;
+    public GameObject winnerCanvas;
+    [HideInInspector]
+    public int totalGnomes;
+    [HideInInspector]
+    public int currentHorde;
+
     private Dictionary<int, int> gnomeTotals;
     private bool onGnomeRest;
     private bool onHordeRest;
-    private int currentHorde;
-
+    
     private void Awake()
     {
         BuildPath();
@@ -34,14 +39,17 @@ public class GameManager : MonoBehaviour
         if (!onHordeRest)
         {
             if (!onGnomeRest)
-            {
                 StartCoroutine(StartHorde());
-            }
         }
         else
         {
-            if(currentHorde< hordes.Count - 1)
+            if(currentHorde < hordes.Count - 1)
                 StartCoroutine(HordeRest());
+            else
+            {
+                if (totalGnomes == 0)
+                    WinGame();
+            }
         }
     }
 
@@ -52,7 +60,6 @@ public class GameManager : MonoBehaviour
         foreach (var dir in directions)
         {
             var next = new Vector3Int(pos.x, pos.y, 0) + new Vector3Int(dir.x, dir.y, 0);
-
             if (gnomesPath.GetTile(next) != null)
             {
                 var nextpos = new Vector3(next.x + 0.5f, next.y + 0.5f, 0f);
@@ -90,6 +97,7 @@ public class GameManager : MonoBehaviour
         {
             Instantiate(gnomePrefabs[gnomeType], pathStart, Quaternion.identity);
             gnomeTotals[gnomeType] -= 1;
+            totalGnomes++;
         }
         onGnomeRest = true;
         yield return new WaitForSeconds(0.5f);
@@ -104,11 +112,15 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(hordesRestTime);
         onHordeRest = false;
     }
-
     private void SetHordeQtds(HordeObject horde)
     {
         gnomeTotals[0] =  horde.jorgeQtd;
         gnomeTotals[1] = horde.otaviaQtd;
         gnomeTotals[2] = horde.garibaldisQtd;
+    }
+    private void WinGame()
+    {
+        winnerCanvas.SetActive(true);
+        Time.timeScale = 0f;
     }
 }

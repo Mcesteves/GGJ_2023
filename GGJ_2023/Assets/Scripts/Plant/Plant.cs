@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Plant : MonoBehaviour
 {
+    public List<GameObject> enemies;
     [SerializeField]
     private PlantObject plantObject;
     [SerializeField]
     private GameObject bulletPrefab;
     private bool onRest;
-    public GameObject currentTarget;
-    public List<GameObject> enemies;
+    private GameObject currentTarget;
     private List<GameObject> bombTargets;
-
     void Start()
     {
         GetComponent<SpriteRenderer>().sprite = plantObject.sprite;

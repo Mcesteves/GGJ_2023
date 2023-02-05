@@ -16,13 +16,10 @@ public class GnomeWalking : MonoBehaviour
         StartCoroutine(Wait());
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         if(stepCount != gameManager.path.Count && canMove)
-        {
             Move();
-        }
 
     }
     public void Move()
@@ -30,14 +27,17 @@ public class GnomeWalking : MonoBehaviour
         var step = gnome.gnomeObject.speed * Time.deltaTime;
         transform.position = Vector3.MoveTowards(transform.position, gameManager.GetPathPosition(stepCount), step);
         if (Vector3.Distance(transform.position, gameManager.GetPathPosition(stepCount)) < 0.001f)
-        {
             stepCount++;
-        }
     }
 
     private IEnumerator Wait()
     {
         yield return new WaitForSeconds(1.0f);
         canMove = true;
+    }
+
+    private void OnDestroy()
+    {
+        gameManager.totalGnomes--;
     }
 }

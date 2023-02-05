@@ -16,7 +16,6 @@ public class PlantManager : MonoBehaviour
     private Vector3 plantPosition;
     private bool onPlantSelection;
     private GameObject selectedPlant;
-
     private void Awake()
     {
         if (instance == null)
@@ -56,7 +55,6 @@ public class PlantManager : MonoBehaviour
             }
         }
     }
-
     public void OpenPlantMenu()
     {
         selectionPanel.transform.position = Input.mousePosition;

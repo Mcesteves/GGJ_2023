@@ -6,16 +6,6 @@ public class TreeManager : MonoBehaviour
 {
     public float life;
     public GameObject defeatedCanvas;
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Gnome"))

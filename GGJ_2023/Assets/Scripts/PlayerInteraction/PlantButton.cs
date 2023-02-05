@@ -19,12 +19,8 @@ public class PlantButton : MonoBehaviour
     public void SetButton()
     {
         if (PlantManager.instance.removePlant)
-        {
             GetComponent<Button>().interactable = removeButton;
-        }
         else
-        {
             GetComponent<Button>().interactable = !removeButton;
-        }
     }            
 }
