@@ -12,6 +12,7 @@ public class PlantManager : MonoBehaviour
     public GameObject selectionPanel;
     [HideInInspector]
     public bool removePlant;
+    public PauseMenu pauseMenu;
 
     private Vector3 plantPosition;
     private bool onPlantSelection;
@@ -32,7 +33,7 @@ public class PlantManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !onPlantSelection)
+        if (Input.GetMouseButtonDown(0) && !onPlantSelection && !pauseMenu.isPaused)
         {
             var pos = Vector3Int.FloorToInt(Camera.main.ScreenToWorldPoint(Input.mousePosition));
             var tile = plants.GetTile(new Vector3Int(pos.x, pos.y, 0));

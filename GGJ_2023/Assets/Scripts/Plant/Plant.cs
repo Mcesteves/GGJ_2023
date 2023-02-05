@@ -116,7 +116,8 @@ public class Plant : MonoBehaviour
         Destroy(bullet);
         foreach (GameObject enemy in bombTargets)
         {
-            enemy.GetComponent<Gnome>().TakeDamage(plantObject.damage);
+            if(enemy != null)
+                enemy.GetComponent<Gnome>().TakeDamage(plantObject.damage);
         }
     }
 

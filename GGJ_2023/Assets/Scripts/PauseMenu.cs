@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject PauseUI;
-    [SerializeField]
-    private GameObject UIConfig;
+    [HideInInspector]
+    public bool isPaused;
 
     private void Awake()
     {
@@ -19,31 +19,33 @@ public class PauseMenu : MonoBehaviour
         //AudioManager.instance.Play("InGame");
     }
 
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape)){
+            if (isPaused)
+                ResumeGame();
+            else
+                PauseGame();
+        }
+    }
+
     public void PauseGame()
     {
         Time.timeScale = 0.0f;
         PauseUI.SetActive(true);
+        isPaused = true;
 
     }
     public void ResumeGame()
     {
         Time.timeScale = 1.0f;
         PauseUI.SetActive(false);
+        isPaused = false;
     }
 
     public void GotoMainMenu()
     {
         Time.timeScale = 1.0f;
         SceneManager.LoadScene("MainMenu");
-    }
-
-    public void OpenConfig()
-    {
-        UIConfig.SetActive(true);
-    }
-
-    public void CloseConfig()
-    {
-        UIConfig.SetActive(false);
     }
 }
