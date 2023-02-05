@@ -63,7 +63,8 @@ public class Plant : MonoBehaviour
 
     private IEnumerator Shoot()
     {
-        
+        anim.SetBool("attacking", true);
+        Flip(currentTarget.transform.position, bulletPrefab);
         var bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
         onRest = true;
         var direction = (currentTarget.transform.position - transform.position).normalized;
@@ -79,6 +80,7 @@ public class Plant : MonoBehaviour
             currentTarget.GetComponent<Gnome>().TakeDamage(plantObject.damage);
             yield return new WaitForSeconds(plantObject.rechargeTime - time);
             onRest = false;
+            
         }
         else
         {
@@ -88,12 +90,12 @@ public class Plant : MonoBehaviour
             Destroy(bullet);
             currentTarget.GetComponent<Gnome>().TakeDamage(plantObject.damage);
         }
+        anim.SetBool("attacking", false);
     }
 
     private IEnumerator AuraAttack()
     {
-        if (anim != null)
-            anim.SetBool("attacking", true);
+        anim.SetBool("attacking", true);
         foreach ( GameObject enemy in enemies)
         {
             var bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
@@ -104,8 +106,7 @@ public class Plant : MonoBehaviour
         onRest = true;
         yield return new WaitForSeconds(plantObject.rechargeTime);
         onRest = false;
-        if (anim != null)
-            anim.SetBool("attacking", false);
+        anim.SetBool("attacking", false);
     }
 
     private IEnumerator DestroyBullet(GameObject bullet, Vector2 direction, GameObject enemy = null)
@@ -131,8 +132,7 @@ public class Plant : MonoBehaviour
 
     private IEnumerator AreaAttack()
     {
-        if (anim != null)
-            anim.SetBool("attacking", true);
+        anim.SetBool("attacking", true);
         Flip(currentTarget.transform.position, bulletPrefab);
         var bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
         var direction = (currentTarget.transform.position - transform.position).normalized;
@@ -142,8 +142,7 @@ public class Plant : MonoBehaviour
         onRest = true;
         yield return new WaitForSeconds(plantObject.rechargeTime);
         onRest = false;
-        if (anim != null)
-            anim.SetBool("attacking", false);
+        anim.SetBool("attacking", false);
     }
 
     public void CheckPositions(GameObject bomb)
