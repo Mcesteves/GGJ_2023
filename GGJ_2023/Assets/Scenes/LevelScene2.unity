@@ -138,6 +138,10 @@ PrefabInstance:
       propertyPath: defeatedCanvas
       value: 
       objectReference: {fileID: 1595093725}
+    - target: {fileID: 1873452756, guid: be212c9142c063043bbb9369dcb66117, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 922777308295568376, guid: be212c9142c063043bbb9369dcb66117, type: 3}
       propertyPath: m_RootOrder
       value: 6
