@@ -20,7 +20,7 @@ public class MenuManager : MonoBehaviour
     }
     public void PlayGame()
     {
-        NextScene(scene);
+        NextScene("Tutorial");
     }
     public void OpenSettings()
     {

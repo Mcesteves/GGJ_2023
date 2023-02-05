@@ -3868,6 +3868,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 838444422582040903, guid: 873d133a2eef3e847b2abf85ec63972b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GotoLevelSelection
+      objectReference: {fileID: 0}
     - target: {fileID: 2884445543796497219, guid: 873d133a2eef3e847b2abf85ec63972b, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -3955,6 +3959,10 @@ PrefabInstance:
     - target: {fileID: 9106565055668260690, guid: 873d133a2eef3e847b2abf85ec63972b, type: 3}
       propertyPath: m_Name
       value: DefeatedCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 9106565055668260690, guid: 873d133a2eef3e847b2abf85ec63972b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 873d133a2eef3e847b2abf85ec63972b, type: 3}

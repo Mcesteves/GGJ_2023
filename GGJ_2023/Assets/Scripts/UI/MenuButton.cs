@@ -10,4 +10,10 @@ public class MenuButton : MonoBehaviour
         Time.timeScale = 1.0f;
         SceneManager.LoadScene("MainMenu");
     }
+    public void GotoLevelSelection()
+    {
+        Time.timeScale = 1.0f;
+        SceneManager.LoadScene("LevelSelection");
+    }
+
 }
