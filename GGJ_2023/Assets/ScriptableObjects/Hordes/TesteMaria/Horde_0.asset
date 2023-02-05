@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ad1c4f01a600c4382a8067560963d5, type: 3}
   m_Name: Horde_0
   m_EditorClassIdentifier: 
-  jorgeQtd: 5
-  otaviaQtd: 3
-  garibaldisQtd: 1
+  jorgeQtd: 2
+  otaviaQtd: 1
+  garibaldisQtd: 2
