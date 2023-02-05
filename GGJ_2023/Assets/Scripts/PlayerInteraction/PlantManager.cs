@@ -14,7 +14,7 @@ public class PlantManager : MonoBehaviour
     public bool removePlant;
     public PauseMenu pauseMenu;
     public float waterTotal;
-    //[HideInInspector]
+    [HideInInspector]
     public float currentWaterTotal;
 
     private Vector3 plantPosition;
