@@ -39,13 +39,14 @@ public class PlantManager : MonoBehaviour
             var tile = plants.GetTile(new Vector3Int(pos.x, pos.y, 0));
             if (tile != null)
             {
+                LayerMask mask = LayerMask.GetMask("Plants");
                 onPlantSelection = true;
                 plantPosition = new Vector3(pos.x + 0.5f, pos.y + 0.5f, 0);
-                RaycastHit2D hit = Physics2D.Raycast(plantPosition, Vector2.up, 0.5f);
-                if (hit.collider != null && hit.collider.CompareTag("Plant") && hit.collider.gameObject.transform.position == plantPosition)
+                RaycastHit2D hit = Physics2D.Raycast(plantPosition, Vector2.up, 0.5f, mask);
+                if (hit.collider != null && hit.collider.gameObject.transform.position == plantPosition)
                 {
                     removePlant = true;
-                    selectedPlant = hit.collider.gameObject;
+                    selectedPlant = hit.collider.gameObject.transform.parent.gameObject;
                 }
                 else
                 {

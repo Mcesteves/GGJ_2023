@@ -102,6 +102,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plantObject: {fileID: 11400000, guid: b1e5e5643e2d5224d98e1bca2fc9a468, type: 2}
   bulletPrefab: {fileID: 3117961499467103188, guid: 7f3e046528c82ad4db488aa510f3a887, type: 3}
+  currentTarget: {fileID: 0}
+  enemies: []
 --- !u!61 &7378963627072497172
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -159,9 +161,9 @@ GameObject:
   m_Component:
   - component: {fileID: 15477690499171638}
   - component: {fileID: 2176565518976538423}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject
-  m_TagString: Plant
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
