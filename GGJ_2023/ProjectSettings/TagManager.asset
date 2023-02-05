@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Gnome
   - Plant
+  - GameManager
   layers:
   - Default
   - TransparentFX
