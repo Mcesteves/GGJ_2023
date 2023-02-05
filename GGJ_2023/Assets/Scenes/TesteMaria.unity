@@ -2954,6 +2954,9 @@ MonoBehaviour:
   selectionPanel: {fileID: 537039376}
   removePlant: 0
   pauseMenu: {fileID: 841783123}
+  waterTotal: 0
+  currentWaterTotal: 0
+  closePlantMenuButton: {fileID: 0}
 --- !u!4 &1476726046
 Transform:
   m_ObjectHideFlags: 0
