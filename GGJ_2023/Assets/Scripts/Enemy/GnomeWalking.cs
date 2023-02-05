@@ -5,12 +5,10 @@ using UnityEngine.Tilemaps;
 
 public class GnomeWalking : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public Tilemap gnomesPath;
     private Gnome gnome;
     private int stepCount = 1;
     private bool canMove;
-    public GameManager gameManager;
+    private GameManager gameManager;
     void Start()
     {
         gnome = GetComponent<Gnome>();

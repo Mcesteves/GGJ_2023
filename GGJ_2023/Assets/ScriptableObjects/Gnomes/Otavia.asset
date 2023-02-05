@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Otavia
   m_EditorClassIdentifier: 
   damage: 0
-  endurance: 0
-  speed: 0
-  normalSprite: {fileID: 0}
-  damagedSprite: {fileID: 0}
+  endurance: 100
+  speed: 3
+  normalSprite: {fileID: -1042477564, guid: da322a6e6346aa947b58fdcc44137979, type: 3}
+  damagedSprite: {fileID: 782219919, guid: da322a6e6346aa947b58fdcc44137979, type: 3}

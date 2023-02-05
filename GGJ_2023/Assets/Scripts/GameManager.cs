@@ -8,10 +8,42 @@ public class GameManager : MonoBehaviour
     public Tilemap gnomesPath;
     public List<Vector2> path;
     public Vector3 pathStart;
+    public List<HordeObject> hordes;
+    public List<GameObject> gnomePrefabs;
+    public float hordesRestTime;
+    private Dictionary<int, int> gnomeTotals;
+    private bool onGnomeRest;
+    private bool onHordeRest;
+    private int currentHorde;
 
     private void Awake()
     {
         BuildPath();
+    }
+
+    private void Start()
+    {
+        gnomeTotals = new Dictionary<int, int>();
+        gnomeTotals.Add(0, hordes[0].jorgeQtd);
+        gnomeTotals.Add(1,hordes[0].otaviaQtd);
+        gnomeTotals.Add(2, hordes[0].garibaldisQtd);
+    }
+
+    private void FixedUpdate()
+    {
+        if (!onHordeRest)
+        {
+            if (!onGnomeRest)
+            {
+                StartCoroutine(StartHorde());
+            }
+        }
+        else
+        {
+            if(currentHorde< hordes.Count - 1)
+                StartCoroutine(HordeRest());
+        }
+        
     }
 
     public bool CheckDirection(Vector3 position)
@@ -50,5 +82,34 @@ public class GameManager : MonoBehaviour
     public Vector3 GetPathPosition(int index)
     {
         return path[index];
+    }
+
+    private IEnumerator StartHorde()
+    {
+        int gnomeType = Random.Range(0, 3);
+        if(gnomeTotals[gnomeType] != 0)
+        {
+            Instantiate(gnomePrefabs[gnomeType], pathStart, Quaternion.identity);
+            gnomeTotals[gnomeType] -= 1;
+        }
+        onGnomeRest = true;
+        yield return new WaitForSeconds(0.5f);
+        onGnomeRest = false;
+        if (gnomeTotals[0] + gnomeTotals[1] + gnomeTotals[2] == 0)
+            onHordeRest = true;
+    }
+    private IEnumerator HordeRest()
+    {
+        currentHorde++;
+        SetHordeQtds(hordes[currentHorde]);
+        yield return new WaitForSeconds(hordesRestTime);
+        onHordeRest = false;
+    }
+
+    private void SetHordeQtds(HordeObject horde)
+    {
+        gnomeTotals[0] =  horde.jorgeQtd;
+        gnomeTotals[1] = horde.otaviaQtd;
+        gnomeTotals[2] = horde.garibaldisQtd;
     }
 }
