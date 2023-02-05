@@ -12,12 +12,16 @@ public class Plant : MonoBehaviour
     private bool onRest;
     private GameObject currentTarget;
     private List<GameObject> bombTargets;
+    private Animator anim;
+    private SpriteRenderer sr;
     void Start()
     {
         GetComponent<SpriteRenderer>().sprite = plantObject.sprite;
         GetComponent<BoxCollider2D>().size = (2*plantObject.range + 1)*Vector2.one;
         enemies = new List<GameObject>();
         bombTargets = new List<GameObject>();
+        anim = GetComponent<Animator>();
+        sr = GetComponent<SpriteRenderer>();
             
     }
     void Update()
@@ -89,7 +93,9 @@ public class Plant : MonoBehaviour
 
     private IEnumerator AuraAttack()
     {
-        foreach( GameObject enemy in enemies)
+        if (anim != null)
+            anim.SetBool("attacking", true);
+        foreach ( GameObject enemy in enemies)
         {
             var bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
             var direction = (enemy.transform.position - transform.position).normalized;
@@ -99,6 +105,8 @@ public class Plant : MonoBehaviour
         onRest = true;
         yield return new WaitForSeconds(plantObject.rechargeTime);
         onRest = false;
+        if (anim != null)
+            anim.SetBool("attacking", false);
     }
 
     private IEnumerator DestroyBullet(GameObject bullet, Vector2 direction, GameObject enemy = null)
@@ -123,6 +131,9 @@ public class Plant : MonoBehaviour
 
     private IEnumerator AreaAttack()
     {
+        if (anim != null)
+            anim.SetBool("attacking", true);
+        Flip(currentTarget.transform.position, bulletPrefab);
         var bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
         var direction = (currentTarget.transform.position - transform.position).normalized;
         bullet.GetComponent<Rigidbody2D>().velocity = direction * plantObject.bulletSpeed;
@@ -131,6 +142,8 @@ public class Plant : MonoBehaviour
         onRest = true;
         yield return new WaitForSeconds(plantObject.rechargeTime);
         onRest = false;
+        if (anim != null)
+            anim.SetBool("attacking", false);
     }
 
     public void CheckPositions(GameObject bomb)
@@ -145,6 +158,20 @@ public class Plant : MonoBehaviour
                 if (hit.collider != null && hit.collider.CompareTag("Gnome") && !bombTargets.Contains(hit.collider.gameObject))
                     bombTargets.Add(hit.collider.gameObject);
             }
+        }
+    }
+
+    private void Flip(Vector3 target, GameObject gameObject)
+    {
+        if (transform.position.x < target.x)
+        {
+            sr.flipX = true;
+            gameObject.GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else if (transform.position.x > target.x)
+        {
+            sr.flipX = false;
+            gameObject.GetComponent<SpriteRenderer>().flipX = false;
         }
     }
     void OnDrawGizmos()

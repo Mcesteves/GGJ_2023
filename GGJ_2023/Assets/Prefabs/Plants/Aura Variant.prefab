@@ -15,6 +15,10 @@ PrefabInstance:
       propertyPath: plantObject
       value: 
       objectReference: {fileID: 11400000, guid: 93c93a07dc18c3649a58740428f30fe7, type: 2}
+    - target: {fileID: 499306484103736818, guid: 9c6daf00f33e0c9439211965177bd4b0, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 2741056765444493844, guid: 4d213aebad8dadb4297452813417bb3e, type: 3}
     - target: {fileID: 499306484103736819, guid: 9c6daf00f33e0c9439211965177bd4b0, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -22,6 +26,14 @@ PrefabInstance:
     - target: {fileID: 499306484103736828, guid: 9c6daf00f33e0c9439211965177bd4b0, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499306484103736828, guid: 9c6daf00f33e0c9439211965177bd4b0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 499306484103736828, guid: 9c6daf00f33e0c9439211965177bd4b0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 499306484103736828, guid: 9c6daf00f33e0c9439211965177bd4b0, type: 3}
       propertyPath: m_LocalPosition.x

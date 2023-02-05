@@ -9,12 +9,24 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 499306484103736817, guid: 9c6daf00f33e0c9439211965177bd4b0, type: 3}
       propertyPath: m_Name
-      value: Bombardeira Variant (1)
+      value: Bombardeira Variant
       objectReference: {fileID: 0}
     - target: {fileID: 499306484103736818, guid: 9c6daf00f33e0c9439211965177bd4b0, type: 3}
       propertyPath: plantObject
       value: 
       objectReference: {fileID: 11400000, guid: d46a4025250a0364d912ba9c0fa0b298, type: 2}
+    - target: {fileID: 499306484103736818, guid: 9c6daf00f33e0c9439211965177bd4b0, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 1749356554935394185, guid: e97ec24145d63da4d8a472baca339700, type: 3}
+    - target: {fileID: 499306484103736819, guid: 9c6daf00f33e0c9439211965177bd4b0, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499306484103736819, guid: 9c6daf00f33e0c9439211965177bd4b0, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 499306484103736819, guid: 9c6daf00f33e0c9439211965177bd4b0, type: 3}
       propertyPath: m_Sprite
       value: 
