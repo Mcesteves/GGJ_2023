@@ -5,6 +5,7 @@ using UnityEngine;
 public class TreeManager : MonoBehaviour
 {
     public float life;
+    public GameObject defeatedCanvas;
     void Start()
     {
         
@@ -29,8 +30,11 @@ public class TreeManager : MonoBehaviour
     {
         if (life > lifeDecrease)
             life -= lifeDecrease;
-        //else
-        //perde o jogo
+        else
+        {
+            defeatedCanvas.SetActive(true);
+            Time.timeScale = 0f;
+        }
             
     }
 }
