@@ -552,11 +552,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1088325207258400805, guid: a6b885cac95ae014fb925691e3abc52b, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 156.815
+      value: 122
       objectReference: {fileID: 0}
     - target: {fileID: 1088325207258400805, guid: a6b885cac95ae014fb925691e3abc52b, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 140.249
+      value: 99
       objectReference: {fileID: 0}
     - target: {fileID: 1088325207258400805, guid: a6b885cac95ae014fb925691e3abc52b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -588,7 +588,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1088325207258400805, guid: a6b885cac95ae014fb925691e3abc52b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -934
+      value: 1099.77
       objectReference: {fileID: 0}
     - target: {fileID: 1088325207258400805, guid: a6b885cac95ae014fb925691e3abc52b, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -609,6 +609,18 @@ PrefabInstance:
     - target: {fileID: 3368600093651792654, guid: a6b885cac95ae014fb925691e3abc52b, type: 3}
       propertyPath: m_Name
       value: MenuButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397255821911944186, guid: a6b885cac95ae014fb925691e3abc52b, type: 3}
+      propertyPath: m_Color.b
+      value: 0.16862746
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397255821911944186, guid: a6b885cac95ae014fb925691e3abc52b, type: 3}
+      propertyPath: m_Color.g
+      value: 0.09019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397255821911944186, guid: a6b885cac95ae014fb925691e3abc52b, type: 3}
+      propertyPath: m_Color.r
+      value: 0.12941177
       objectReference: {fileID: 0}
     - target: {fileID: 5431427680109362771, guid: a6b885cac95ae014fb925691e3abc52b, type: 3}
       propertyPath: m_text
@@ -1103,7 +1115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.78039217, g: 0.60784316, b: 0.69803923, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
