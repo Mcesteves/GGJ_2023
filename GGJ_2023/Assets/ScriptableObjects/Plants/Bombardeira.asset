@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Bombardeira
   m_EditorClassIdentifier: 
   plantType: 2
-  range: 5
-  damage: 5
-  rechargeTime: 5
-  cost: 5
+  range: 4
+  damage: 8
+  rechargeTime: 4
+  cost: 8
   sprite: {fileID: -451164709, guid: 49872f9e00e1ba14eb60a2fd3b3d54d8, type: 3}
-  bulletSpeed: 5
-  bombRange: 5
+  bulletSpeed: 7
+  bombRange: 1
