@@ -9,10 +9,12 @@ public class GnomeWalking : MonoBehaviour
     private int stepCount = 1;
     private bool canMove;
     private GameManager gameManager;
+    private SpriteRenderer sr;
     void Start()
     {
         gnome = GetComponent<Gnome>();
         gameManager = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
+        sr = GetComponent<SpriteRenderer>();
         StartCoroutine(Wait());
     }
 
@@ -25,7 +27,16 @@ public class GnomeWalking : MonoBehaviour
     public void Move()
     {
         var step = gnome.gnomeObject.speed * Time.deltaTime;
+        if(transform.position.x < Vector3.MoveTowards(transform.position, gameManager.GetPathPosition(stepCount), step).x)
+        {
+            sr.flipX = false;
+        }
+        else if(transform.position.x > Vector3.MoveTowards(transform.position, gameManager.GetPathPosition(stepCount), step).x)
+        {
+            sr.flipX = true;
+        }
         transform.position = Vector3.MoveTowards(transform.position, gameManager.GetPathPosition(stepCount), step);
+        
         if (Vector3.Distance(transform.position, gameManager.GetPathPosition(stepCount)) < 0.001f)
             stepCount++;
     }
