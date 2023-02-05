@@ -9,8 +9,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 499306484103736817, guid: 9c6daf00f33e0c9439211965177bd4b0, type: 3}
       propertyPath: m_Name
-      value: Metranca
+      value: Metranca Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 499306484103736818, guid: 9c6daf00f33e0c9439211965177bd4b0, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 4532308358753445046, guid: 46a48dc67897fe24da401afce265c115, type: 3}
     - target: {fileID: 499306484103736828, guid: 9c6daf00f33e0c9439211965177bd4b0, type: 3}
       propertyPath: m_RootOrder
       value: 0
