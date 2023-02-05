@@ -13,12 +13,12 @@ public class PauseMenu : MonoBehaviour
 
     private void Awake()
     {
-        //AudioManager.instance.Stop("MainMenu");
-        //AudioManager.instance.Stop("InGame");
+        AudioManager.instance.Stop("Tema");
+        AudioManager.instance.Stop("Battle");
     }
     private void Start()
     {
-        //AudioManager.instance.Play("InGame");
+        AudioManager.instance.Play("Battle");
         fade.GetComponent<Animator>().Play("FadeIn");
     }
 

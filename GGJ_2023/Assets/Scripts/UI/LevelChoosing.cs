@@ -11,6 +11,10 @@ public class LevelChoosing : MonoBehaviour
     private GameObject fade;
     private string scene;
 
+    private void Awake()
+    {
+        AudioManager.instance.Stop("Tema");
+    }
     private void Start()
     {
         fade.GetComponent<Animator>().Play("FadeIn");

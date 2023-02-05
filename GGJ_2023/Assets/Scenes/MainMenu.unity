@@ -3184,6 +3184,13 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - nome: Battle
+    audio: {fileID: 8300000, guid: 52713bf04adf7da46bfe3522836d3708, type: 3}
+    type: 1
+    volume: 0
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
 --- !u!4 &2045086061
 Transform:
   m_ObjectHideFlags: 0
