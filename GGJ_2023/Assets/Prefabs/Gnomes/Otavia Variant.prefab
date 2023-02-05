@@ -25,7 +25,7 @@ PrefabInstance:
       objectReference: {fileID: -1042477564, guid: da322a6e6346aa947b58fdcc44137979, type: 3}
     - target: {fileID: 4827278530528212924, guid: 71a582855b68e29409b5c073883abb89, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4827278530528212925, guid: 71a582855b68e29409b5c073883abb89, type: 3}
       propertyPath: m_RootOrder
@@ -82,18 +82,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4827278530528212920, guid: 71a582855b68e29409b5c073883abb89, type: 3}
   m_PrefabInstance: {fileID: 4351598163263000217}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7900050342947315402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9123742290819971361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3c63c77e01b4014c857e9b22a830f45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &7521037072169437190
 Animator:
   serializedVersion: 5
@@ -114,3 +102,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &7900050342947315402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9123742290819971361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3c63c77e01b4014c857e9b22a830f45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
