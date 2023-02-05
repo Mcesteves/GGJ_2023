@@ -7,6 +7,9 @@ TagManager:
   - Gnome
   - Plant
   - GameManager
+  - Master
+  - Music
+  - SFX
   layers:
   - Default
   - TransparentFX
