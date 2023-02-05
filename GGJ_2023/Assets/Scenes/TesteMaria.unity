@@ -668,6 +668,51 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &635940607
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 635940609}
+  - component: {fileID: 635940608}
+  m_Layer: 0
+  m_Name: LanguageManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &635940608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635940607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b27aba4fa94f7547a582e1ede7d2612, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLanguage: 0
+--- !u!4 &635940609
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635940607}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 480.5877, y: 225.56429, z: 1.673579}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &678088547 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5222714566225151788, guid: beb610be555c89043a735f525f10ebbe, type: 3}
@@ -3592,6 +3637,34 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4882140363211255468, guid: 7015cc0743264c6458b2d709591f2e9a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4882140363211255468, guid: 7015cc0743264c6458b2d709591f2e9a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4882140363211255468, guid: 7015cc0743264c6458b2d709591f2e9a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1806789933502082016}
+    - target: {fileID: 4882140363211255468, guid: 7015cc0743264c6458b2d709591f2e9a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4882140363211255468, guid: 7015cc0743264c6458b2d709591f2e9a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateLanguage
+      objectReference: {fileID: 0}
+    - target: {fileID: 4882140363211255468, guid: 7015cc0743264c6458b2d709591f2e9a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LanguageButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4882140363211255468, guid: 7015cc0743264c6458b2d709591f2e9a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4923749151773382309, guid: 7015cc0743264c6458b2d709591f2e9a, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -3608,6 +3681,34 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -640.50446
       objectReference: {fileID: 0}
+    - target: {fileID: 6068961610336990417, guid: 7015cc0743264c6458b2d709591f2e9a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6068961610336990417, guid: 7015cc0743264c6458b2d709591f2e9a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6068961610336990417, guid: 7015cc0743264c6458b2d709591f2e9a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1806789933502082017}
+    - target: {fileID: 6068961610336990417, guid: 7015cc0743264c6458b2d709591f2e9a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6068961610336990417, guid: 7015cc0743264c6458b2d709591f2e9a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateLanguage
+      objectReference: {fileID: 0}
+    - target: {fileID: 6068961610336990417, guid: 7015cc0743264c6458b2d709591f2e9a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LanguageButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6068961610336990417, guid: 7015cc0743264c6458b2d709591f2e9a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8198818908837842737, guid: 7015cc0743264c6458b2d709591f2e9a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3622,6 +3723,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7015cc0743264c6458b2d709591f2e9a, type: 3}
+--- !u!1 &1806789933502082014 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3099207084957298221, guid: 7015cc0743264c6458b2d709591f2e9a, type: 3}
+  m_PrefabInstance: {fileID: 1806789933502082013}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1806789933502082015 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 951814431877948017, guid: 7015cc0743264c6458b2d709591f2e9a, type: 3}
+  m_PrefabInstance: {fileID: 1806789933502082013}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1806789933502082016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806789933502082014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 483f60213945af243b37f701a3e9335b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonLanguage: 1
+--- !u!114 &1806789933502082017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806789933502082015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 483f60213945af243b37f701a3e9335b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonLanguage: 0
 --- !u!1001 &1807408446189863678
 PrefabInstance:
   m_ObjectHideFlags: 0
