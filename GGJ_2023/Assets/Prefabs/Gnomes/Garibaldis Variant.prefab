@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4827278530528212920, guid: 71a582855b68e29409b5c073883abb89, type: 3}
       propertyPath: m_Name
-      value: Garibaldis
+      value: Garibaldis Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4827278530528212920, guid: 71a582855b68e29409b5c073883abb89, type: 3}
       propertyPath: m_IsActive
@@ -33,11 +33,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4827278530528212925, guid: 71a582855b68e29409b5c073883abb89, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.5
+      value: -3.4120533
       objectReference: {fileID: 0}
     - target: {fileID: 4827278530528212925, guid: 71a582855b68e29409b5c073883abb89, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: 1.5789622
       objectReference: {fileID: 0}
     - target: {fileID: 4827278530528212925, guid: 71a582855b68e29409b5c073883abb89, type: 3}
       propertyPath: m_LocalPosition.z
@@ -90,5 +90,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3c63c77e01b4014c857e9b22a830f45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gnomesPath: {fileID: 0}
-  gameManager: {fileID: 0}
+--- !u!95 &7755277977073542891
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3115999369506786822}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3c4eac80c5f1c2745a97235d7b36eb70, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0

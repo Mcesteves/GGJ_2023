@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 499306484103736817, guid: 9c6daf00f33e0c9439211965177bd4b0, type: 3}
       propertyPath: m_Name
-      value: Bombardeira Variant
+      value: Bombardeira Variant (1)
       objectReference: {fileID: 0}
     - target: {fileID: 499306484103736818, guid: 9c6daf00f33e0c9439211965177bd4b0, type: 3}
       propertyPath: plantObject
@@ -25,11 +25,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 499306484103736828, guid: 9c6daf00f33e0c9439211965177bd4b0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.5
+      value: -1.4526911
       objectReference: {fileID: 0}
     - target: {fileID: 499306484103736828, guid: 9c6daf00f33e0c9439211965177bd4b0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5
+      value: -0.4506722
       objectReference: {fileID: 0}
     - target: {fileID: 499306484103736828, guid: 9c6daf00f33e0c9439211965177bd4b0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -73,3 +73,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c6daf00f33e0c9439211965177bd4b0, type: 3}
+--- !u!1 &3993126040360868419 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 499306484103736817, guid: 9c6daf00f33e0c9439211965177bd4b0, type: 3}
+  m_PrefabInstance: {fileID: 3568973375577470898}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2258491636412150331
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3993126040360868419}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ec635d2879252c745a231dfd3725c5de, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
