@@ -1267,6 +1267,50 @@ PrefabInstance:
       propertyPath: winnerCanvas
       value: 
       objectReference: {fileID: 2001480201}
+    - target: {fileID: 1807408445399357510, guid: 8769cd2b777adbe4098a32207b6b7e62, type: 3}
+      propertyPath: hordes.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1807408445399357510, guid: 8769cd2b777adbe4098a32207b6b7e62, type: 3}
+      propertyPath: hordes.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 65f9c7b3da85ced4fae22ac0ca4ea49e, type: 2}
+    - target: {fileID: 1807408445399357510, guid: 8769cd2b777adbe4098a32207b6b7e62, type: 3}
+      propertyPath: hordes.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 0ab47d3f1afe3744d948666842b4b038, type: 2}
+    - target: {fileID: 1807408445399357510, guid: 8769cd2b777adbe4098a32207b6b7e62, type: 3}
+      propertyPath: hordes.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: ef03d9a379052934cbba9f8470b55a44, type: 2}
+    - target: {fileID: 1807408445399357510, guid: 8769cd2b777adbe4098a32207b6b7e62, type: 3}
+      propertyPath: hordes.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 8d666a277fb43cf44805763adb6f03bd, type: 2}
+    - target: {fileID: 1807408445399357510, guid: 8769cd2b777adbe4098a32207b6b7e62, type: 3}
+      propertyPath: hordes.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: b42615ec2bd77b04d949adff245fa8c8, type: 2}
+    - target: {fileID: 1807408445399357510, guid: 8769cd2b777adbe4098a32207b6b7e62, type: 3}
+      propertyPath: hordes.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7e935d16f9ebae44d83b1ec9754bf2fc, type: 2}
+    - target: {fileID: 1807408445399357510, guid: 8769cd2b777adbe4098a32207b6b7e62, type: 3}
+      propertyPath: hordes.Array.data[6]
+      value: 
+      objectReference: {fileID: 11400000, guid: e5c3e4d4541c18c44956260da8771180, type: 2}
+    - target: {fileID: 1807408445399357510, guid: 8769cd2b777adbe4098a32207b6b7e62, type: 3}
+      propertyPath: hordes.Array.data[7]
+      value: 
+      objectReference: {fileID: 11400000, guid: 74c5cb1ec620d414a94210116a416fcb, type: 2}
+    - target: {fileID: 1807408445399357510, guid: 8769cd2b777adbe4098a32207b6b7e62, type: 3}
+      propertyPath: hordes.Array.data[8]
+      value: 
+      objectReference: {fileID: 11400000, guid: f9cf6e75d77cb494ea470d7b1192bbd6, type: 2}
+    - target: {fileID: 1807408445399357510, guid: 8769cd2b777adbe4098a32207b6b7e62, type: 3}
+      propertyPath: hordes.Array.data[9]
+      value: 
+      objectReference: {fileID: 11400000, guid: 6a394a6c20556234bafd927c31ded580, type: 2}
     - target: {fileID: 1807408445399357511, guid: 8769cd2b777adbe4098a32207b6b7e62, type: 3}
       propertyPath: m_RootOrder
       value: 5
