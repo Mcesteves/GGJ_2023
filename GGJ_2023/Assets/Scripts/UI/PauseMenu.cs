@@ -8,6 +8,8 @@ public class PauseMenu : MonoBehaviour
     public GameObject PauseUI;
     [HideInInspector]
     public bool isPaused;
+    [SerializeField]
+    private GameObject fade;
 
     private void Awake()
     {
@@ -17,6 +19,7 @@ public class PauseMenu : MonoBehaviour
     private void Start()
     {
         //AudioManager.instance.Play("InGame");
+        fade.GetComponent<Animator>().Play("FadeIn");
     }
 
     private void Update()

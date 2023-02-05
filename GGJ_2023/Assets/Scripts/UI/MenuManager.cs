@@ -17,6 +17,7 @@ public class MenuManager : MonoBehaviour
     {
         //AudioManager.instance.Stop("InGame");
         AudioManager.instance.Play("Tema");
+        fade.GetComponent<Animator>().Play("FadeIn");
     }
     public void PlayGame()
     {
