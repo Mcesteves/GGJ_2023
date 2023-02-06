@@ -33,7 +33,6 @@ public class TreeManager : MonoBehaviour
         else
         {
             defeatedCanvas.SetActive(true);
-            Time.timeScale = 0f;
         }
             
     }

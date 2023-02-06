@@ -312,11 +312,113 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PauseUI: {fileID: 550236642}
   isPaused: 0
-  fade: {fileID: 1863783120}
+  fade: {fileID: 876478755}
 --- !u!1 &849031128 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3594364063222630436, guid: 4be65a2e423e0714b9401b754acf8b3f, type: 3}
   m_PrefabInstance: {fileID: 1863783119}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &876478754
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3004731935021387590, guid: d5e7cfbf982614b45a1040e2b35622cb, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004731935021387590, guid: d5e7cfbf982614b45a1040e2b35622cb, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004731935021387590, guid: d5e7cfbf982614b45a1040e2b35622cb, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004731935021387590, guid: d5e7cfbf982614b45a1040e2b35622cb, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004731935021387590, guid: d5e7cfbf982614b45a1040e2b35622cb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004731935021387590, guid: d5e7cfbf982614b45a1040e2b35622cb, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004731935021387590, guid: d5e7cfbf982614b45a1040e2b35622cb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004731935021387590, guid: d5e7cfbf982614b45a1040e2b35622cb, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004731935021387590, guid: d5e7cfbf982614b45a1040e2b35622cb, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004731935021387590, guid: d5e7cfbf982614b45a1040e2b35622cb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004731935021387590, guid: d5e7cfbf982614b45a1040e2b35622cb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004731935021387590, guid: d5e7cfbf982614b45a1040e2b35622cb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004731935021387590, guid: d5e7cfbf982614b45a1040e2b35622cb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004731935021387590, guid: d5e7cfbf982614b45a1040e2b35622cb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004731935021387590, guid: d5e7cfbf982614b45a1040e2b35622cb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004731935021387590, guid: d5e7cfbf982614b45a1040e2b35622cb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004731935021387590, guid: d5e7cfbf982614b45a1040e2b35622cb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004731935021387590, guid: d5e7cfbf982614b45a1040e2b35622cb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004731935021387590, guid: d5e7cfbf982614b45a1040e2b35622cb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004731935021387590, guid: d5e7cfbf982614b45a1040e2b35622cb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004731935021387590, guid: d5e7cfbf982614b45a1040e2b35622cb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004731935021387593, guid: d5e7cfbf982614b45a1040e2b35622cb, type: 3}
+      propertyPath: m_Name
+      value: CanvasFade
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d5e7cfbf982614b45a1040e2b35622cb, type: 3}
+--- !u!1 &876478755 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5754409033728396771, guid: d5e7cfbf982614b45a1040e2b35622cb, type: 3}
+  m_PrefabInstance: {fileID: 876478754}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1163797013 stripped
 GameObject:
@@ -706,11 +808,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4be65a2e423e0714b9401b754acf8b3f, type: 3}
---- !u!1 &1863783120 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4496116650640699709, guid: 4be65a2e423e0714b9401b754acf8b3f, type: 3}
-  m_PrefabInstance: {fileID: 1863783119}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1963335690 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4760156612951069693, guid: 4be65a2e423e0714b9401b754acf8b3f, type: 3}
@@ -970,7 +1067,7 @@ PrefabInstance:
     - target: {fileID: 1335963078262153870, guid: ad6154b5f11cbf848b896d423a61cf7f, type: 3}
       propertyPath: fade
       value: 
-      objectReference: {fileID: 1863783120}
+      objectReference: {fileID: 876478755}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6154b5f11cbf848b896d423a61cf7f, type: 3}
 --- !u!224 &1765242548136771054 stripped
@@ -4137,7 +4234,7 @@ PrefabInstance:
     - target: {fileID: 5228523316279054825, guid: 873d133a2eef3e847b2abf85ec63972b, type: 3}
       propertyPath: fade
       value: 
-      objectReference: {fileID: 1863783120}
+      objectReference: {fileID: 876478755}
     - target: {fileID: 9106565055668260690, guid: 873d133a2eef3e847b2abf85ec63972b, type: 3}
       propertyPath: m_Name
       value: DefeatedCanvas

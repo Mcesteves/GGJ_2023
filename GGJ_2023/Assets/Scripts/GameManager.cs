@@ -121,6 +121,5 @@ public class GameManager : MonoBehaviour
     private void WinGame()
     {
         winnerCanvas.SetActive(true);
-        Time.timeScale = 0f;
     }
 }

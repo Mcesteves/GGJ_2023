@@ -9,12 +9,10 @@ public class MenuButton : MonoBehaviour
     private GameObject fade;
     public void GotoMainMenu()
     {
-        Time.timeScale = 1.0f;
         NextScene("MainMenu");
     }
     public void GotoLevelSelection()
     {
-        Time.timeScale = 1.0f;
         NextScene("LevelSelection");
     }
 
