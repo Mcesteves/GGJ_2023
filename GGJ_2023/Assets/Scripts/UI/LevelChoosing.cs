@@ -14,6 +14,7 @@ public class LevelChoosing : MonoBehaviour
     private void Awake()
     {
         AudioManager.instance.Stop("Tema");
+        AudioManager.instance.Stop("Battle");
     }
     private void Start()
     {

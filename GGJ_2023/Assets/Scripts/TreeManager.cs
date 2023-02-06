@@ -8,6 +8,7 @@ public class TreeManager : MonoBehaviour
     public float life;
     public GameObject defeatedCanvas;
     public GameObject treeSlider;
+    public GameObject particles;
     private void Start()
     {
         treeSlider.GetComponent<Slider>().maxValue = life;
@@ -29,6 +30,7 @@ public class TreeManager : MonoBehaviour
         {
             life -= lifeDecrease;
             treeSlider.GetComponent<Slider>().value = life;
+            particles.GetComponent<ParticleSystem>().Play();
         }   
         else
         {
