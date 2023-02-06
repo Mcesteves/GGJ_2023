@@ -156,6 +156,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4827278530528212925}
     m_Modifications:
+    - target: {fileID: 539555532284932382, guid: 4d149afc40d0388499eb9bbf5581a43d, type: 3}
+      propertyPath: lengthInSec
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 539555532284932382, guid: 4d149afc40d0388499eb9bbf5581a43d, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 539555532284932382, guid: 4d149afc40d0388499eb9bbf5581a43d, type: 3}
+      propertyPath: UVModule.sprites.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 539555532284932382, guid: 4d149afc40d0388499eb9bbf5581a43d, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 539555532284932382, guid: 4d149afc40d0388499eb9bbf5581a43d, type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 539555532284932382, guid: 4d149afc40d0388499eb9bbf5581a43d, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1380449121296778754, guid: 4d149afc40d0388499eb9bbf5581a43d, type: 3}
       propertyPath: m_Name
       value: Particle Nomo Damage

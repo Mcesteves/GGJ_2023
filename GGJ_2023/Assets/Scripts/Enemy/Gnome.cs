@@ -17,10 +17,17 @@ public class Gnome : MonoBehaviour
 
     public void TakeDamage(float lifeDecrease)
     {
+        StartCoroutine(TakeDamageCoroutine(lifeDecrease));
+    }
+
+    private IEnumerator TakeDamageCoroutine(float lifeDecrease)
+    {
+        particles.GetComponent<ParticleSystem>().Play();
+        yield return new WaitForSeconds(0.1f);
         if (life > lifeDecrease)
         {
             life -= lifeDecrease;
-            particles.GetComponent<ParticleSystem>().Play();
+            
             if (life <= gnomeObject.endurance / 2)
                 anim.SetBool("hurt", true);
         }
