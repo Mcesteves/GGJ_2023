@@ -43,9 +43,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            if(currentHorde < hordes.Count - 1)
-                StartCoroutine(HordeRest());
-            else
+            if(currentHorde > hordes.Count - 1)
             {
                 if (totalGnomes == 0)
                     WinGame();
@@ -103,14 +101,14 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         onGnomeRest = false;
         if (gnomeTotals[0] + gnomeTotals[1] + gnomeTotals[2] == 0)
+        {
             onHordeRest = true;
-    }
-    private IEnumerator HordeRest()
-    {
-        currentHorde++;
-        SetHordeQtds(hordes[currentHorde]);
-        yield return new WaitForSeconds(hordesRestTime);
-        onHordeRest = false;
+            yield return new WaitForSeconds(hordesRestTime);
+            currentHorde++;
+            SetHordeQtds(hordes[currentHorde]);
+            onHordeRest = false;
+        }
+            
     }
     private void SetHordeQtds(HordeObject horde)
     {
