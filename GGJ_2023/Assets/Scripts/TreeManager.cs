@@ -36,6 +36,7 @@ public class TreeManager : MonoBehaviour
         else
         {
             defeatedCanvas.SetActive(true);
+            AudioManager.instance.Stop("Battle");
         }
             
     }

@@ -21,7 +21,6 @@ public class GameManager : MonoBehaviour
     private bool onGnomeRest;
     private bool onHordeRest;
     private bool isOver;
-    
     private void Awake()
     {
         BuildPath();
@@ -37,19 +36,20 @@ public class GameManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (isOver)
-            return;
-        if (!onHordeRest)
+        if (!onHordeRest && !isOver)
         {
             if (!onGnomeRest)
                 StartCoroutine(StartHorde());
         }
-        else
+        else if(!isOver)
         {
             if(currentHorde > hordes.Count - 1)
             {
                 if (totalGnomes == 0)
+                {
+                    isOver = true;
                     WinGame();
+                }    
             }
         }
     }
@@ -107,9 +107,9 @@ public class GameManager : MonoBehaviour
         {
             onHordeRest = true;
             yield return new WaitForSeconds(hordesRestTime);
-            if(currentHorde < hordes.Count)
+            currentHorde++;
+            if (currentHorde < hordes.Count)
             {
-                currentHorde++;
                 SetHordeQtds(hordes[currentHorde]);
             }
             onHordeRest = false;
@@ -125,6 +125,7 @@ public class GameManager : MonoBehaviour
     private void WinGame()
     {
         winnerCanvas.SetActive(true);
+        AudioManager.instance.Stop("Battle");
         AudioManager.instance.Play("win");
     }
 }
