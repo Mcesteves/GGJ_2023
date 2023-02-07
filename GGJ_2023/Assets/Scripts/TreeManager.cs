@@ -31,6 +31,7 @@ public class TreeManager : MonoBehaviour
             life -= lifeDecrease;
             treeSlider.GetComponent<Slider>().value = life;
             particles.GetComponent<ParticleSystem>().Play();
+            AudioManager.instance.Play("tree_hit");
         }   
         else
         {

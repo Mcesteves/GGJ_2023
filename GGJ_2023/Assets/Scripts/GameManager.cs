@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     private Dictionary<int, int> gnomeTotals;
     private bool onGnomeRest;
     private bool onHordeRest;
+    private bool isOver;
     
     private void Awake()
     {
@@ -36,6 +37,8 @@ public class GameManager : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (isOver)
+            return;
         if (!onHordeRest)
         {
             if (!onGnomeRest)
@@ -104,8 +107,11 @@ public class GameManager : MonoBehaviour
         {
             onHordeRest = true;
             yield return new WaitForSeconds(hordesRestTime);
-            currentHorde++;
-            SetHordeQtds(hordes[currentHorde]);
+            if(currentHorde < hordes.Count)
+            {
+                currentHorde++;
+                SetHordeQtds(hordes[currentHorde]);
+            }
             onHordeRest = false;
         }
             
@@ -119,5 +125,6 @@ public class GameManager : MonoBehaviour
     private void WinGame()
     {
         winnerCanvas.SetActive(true);
+        AudioManager.instance.Play("win");
     }
 }

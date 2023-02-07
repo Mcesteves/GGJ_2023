@@ -32,6 +32,10 @@ public class Gnome : MonoBehaviour
                 anim.SetBool("hurt", true);
         }
         else
+        {
+            AudioManager.instance.Play("gnome_death");
             Destroy(this.gameObject);
+        }
+            
     }
 }

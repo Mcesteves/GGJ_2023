@@ -51,4 +51,14 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1.0f;
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void PlayClickSoundIn()
+    {
+        AudioManager.instance.Play("click_01");
+    }
+
+    public void PlayClickSoundOut()
+    {
+        AudioManager.instance.Play("click_02");
+    }
 }

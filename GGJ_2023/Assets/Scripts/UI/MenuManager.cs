@@ -52,4 +52,13 @@ public class MenuManager : MonoBehaviour
         this.scene = scene;
         StartCoroutine(ChangeScene());
     }
+    public void PlayClickSoundIn()
+    {
+        AudioManager.instance.Play("click_01");
+    }
+
+    public void PlayClickSoundOut()
+    {
+        AudioManager.instance.Play("click_02");
+    }
 }
