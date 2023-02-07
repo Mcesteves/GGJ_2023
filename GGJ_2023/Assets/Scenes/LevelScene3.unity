@@ -840,7 +840,7 @@ MonoBehaviour:
   selectionPanel: {fileID: 279107947}
   removePlant: 0
   pauseMenu: {fileID: 841783123}
-  waterTotal: 20
+  waterTotal: 32
   currentWaterTotal: 0
   closePlantMenuButton: {fileID: 279107948}
 --- !u!4 &1476726046
@@ -1435,6 +1435,10 @@ PrefabInstance:
       propertyPath: winnerCanvas
       value: 
       objectReference: {fileID: 2001480201}
+    - target: {fileID: 1807408445399357510, guid: 8769cd2b777adbe4098a32207b6b7e62, type: 3}
+      propertyPath: hordesRestTime
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1807408445399357510, guid: 8769cd2b777adbe4098a32207b6b7e62, type: 3}
       propertyPath: hordes.Array.size
       value: 10

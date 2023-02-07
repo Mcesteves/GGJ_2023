@@ -77,7 +77,10 @@ public class Plant : MonoBehaviour
         {
             yield return new WaitForSeconds(time);
             Destroy(bullet);
-            currentTarget.GetComponent<Gnome>().TakeDamage(plantObject.damage);
+	    if (currentTarget != null){
+	    currentTarget.GetComponent<Gnome>().TakeDamage(plantObject.damage);
+	    }
+            
             yield return new WaitForSeconds(plantObject.rechargeTime - time);
             onRest = false;
             
@@ -88,7 +91,9 @@ public class Plant : MonoBehaviour
             onRest = false;
             yield return new WaitForSeconds(time - plantObject.rechargeTime);
             Destroy(bullet);
-            currentTarget.GetComponent<Gnome>().TakeDamage(plantObject.damage);
+	    if (currentTarget != null){
+	    currentTarget.GetComponent<Gnome>().TakeDamage(plantObject.damage);
+	    }
         }
         anim.SetBool("attacking", false);
     }

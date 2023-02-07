@@ -3191,6 +3191,41 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - nome: click_01
+    audio: {fileID: 8300000, guid: b3e0f0bc67e417e4ea7cff0e30013716, type: 3}
+    type: 0
+    volume: 0
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - nome: click_02
+    audio: {fileID: 8300000, guid: bc13800cdd7635c40b1eaee56c1fbc70, type: 3}
+    type: 0
+    volume: 0
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - nome: gnome_death
+    audio: {fileID: 8300000, guid: aa919f4b52a90bc489a7c35a356edbeb, type: 3}
+    type: 0
+    volume: 0
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - nome: tree_hit
+    audio: {fileID: 8300000, guid: 4bf55f68a62898040a4c6ca8e61dbd15, type: 3}
+    type: 0
+    volume: 0
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - nome: win
+    audio: {fileID: 8300000, guid: 97dcb03deef2658418dd893cbcb49e5e, type: 3}
+    type: 0
+    volume: 0
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &2045086061
 Transform:
   m_ObjectHideFlags: 0
